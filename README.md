@@ -11,7 +11,7 @@ Creating a branch off of the master branch gives you an environment to test out 
 ## Add Commits
 
 Once a branch is created, you make edits to files and folders in the project by making commits to the feature branch. This keeps track of all your progress as you make edits. It's best to commit early and often for a transparent historical record of the different changes you made. It's also very helpful if one of the changes you committed is something you want to revert. Instead of reverting the entire commit that has other changes, if you committed early and often, you can just revert that specific commit while keeping the other commits. 
-
+f
 ## Review and Discuss Changes
 
 Once the Pull Request has been opened, the person or team reviewing your changes can then make suggestions or ask questions about your changes. You can also continue to commit changes during this change to respond to the comments and discussions. 
