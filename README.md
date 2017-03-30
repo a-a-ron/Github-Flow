@@ -20,7 +20,7 @@ Once the Pull Request has been opened, the person or team reviewing your changes
 
 When you're ready to start a discussion about the changes you made you need to open a Pull Request. A Pull Request is basically saying you intend to merge these changes into the master branch. At this point, anyone who has access to view this repository can see your Pull Request. You can open a Pull Request at anytime during the development stage.
 
-# Merge into Maaster
+# Merge into Maasterer
 
 Once the changes have been reviewed and approved, you can merge your Pull Request into the master branch. By doing so, this takes the changes in your feature branch and integrates them into the master branch. Once merged, Pull Requests preserve a record of the changes you committed to the master branch. You can go back at any time and review the changes.
 
