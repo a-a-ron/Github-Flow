@@ -1,4 +1,4 @@
-# Understanding the GitHub Flowhj
+# Understanding the GitHub Flow
 
 ## What is the GitHub Flow?
 
