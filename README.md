@@ -21,7 +21,7 @@ When you're ready to start a discussion about the changes you made you need to o
 Once the Pull Request has been opened, the person or team reviewing your changes can then make suggestions or ask questions about your changes. You can also continue to commit changes during this change to respond to the comments and discussions. 
 
 
-## Merge into Maaster
+### Merge into Master
 
 Once the changes have been reviewed and approved, you can merge your Pull Request into the master branch. By doing so, this takes the changes in your feature branch and integrates them into the master branch. Once merged, Pull Requests preserve a record of the changes you committed to the master branch. You can go back at any time and review the changes.
 
