@@ -8,7 +8,9 @@ However, there is another git-workflow that is a much simpler flow that doesn't 
 
 The Github-flow combines all mainline branches into one "master" branch and all hotfixes are treated like feature branches. Once a branch is merged and changes are pushed to the "master" branch, the master branch is ready to be deployed. This workflow is better suited for continuous delivery models where small changes are made and deployed frequently, often multiple times a day. 
 
-If you haven't noticed already, branching is a core concept in Git and the GitHub flow is based on branching. 
+Branching is a core concept in Git and something the GitHub flow is based on, and since all branches outside of the "master" branch are considered "feature branches", understanding the lifecycle of a "feature branch" is understanding the GitHub flow. 
+
+
 
 
 
