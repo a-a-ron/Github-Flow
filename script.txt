@@ -1,6 +1,6 @@
 Development principles are centered around designing a workflow that is both easily repeatable and reviewable for all collaboraters. Using git as your version control system, you have a lot of flexibility on what exactly that workflow looks like. One popular workflow used by many that is designed primarily around the "release" is called the Git-flow.
 
-The Git-flow begins with two main branches; a "master branch" which is deployable to production, and a "develop branch" that contains the development changes for the next release. Along with these two branches there are supporting branches such as Hotfix branches, release branches, and feature branches that support the development and tracking of changes for a production release. Each of these branches have a specific purpose and are resticted to certain rules and guidelines on how they operate and interact with each other. Now, without going into much detail on how these branches work, you can quickly start to realize how convuluted this can become. In fact, this workflow can be complicated enough that helper scripts have been developed just to help enforce the rules in this workflow, and since this workflow cannot be enforced by a GUI, developers are limited to the command line which means they need to learn everything very well, which takes a lot of time. 
+The Git-flow begins with two main branches; a "master branch" which is deployable to production, and a "develop branch" that contains the development changes for the next release. Along with these two branches there are supporting branches such as Hotfix branches, release branches, and feature branches, that support the development and tracking of changes for a production release. Each of these branches have a specific purpose and are resticted to certain rules and guidelines on how they operate and interact with each other. Now, without going into too much detail on how these branches work, you can quickly start to realize how convuluted this can become. In fact, this workflow can be complicated enough that helper scripts have been developed just to help enforce the rules in this workflow, and since this workflow cannot be enforced by a GUI, developers are limited to the command line which means they need to learn everything very well, which takes a lot of time. 
 
 But, dispite it's complexities, the git-flow does have a lot of benefits, and is a well tested workflow that works for a lot of developement teams that fit within it's guidelines.
 
@@ -10,9 +10,21 @@ The Github-flow combines all mainline branches into one "master" branch and all 
 
 Branching is a core concept in Git and something the GitHub flow is based on, and since all branches outside of the "master" branch are considered "feature branches", understanding the lifecycle of a "feature branch" is understanding the GitHub flow.
 
-1) It starts by creating a feature branch off of master. 
+1) It starts by creating a feature branch off of master. When you create a branch in your project, it's copying that project from that point in time into a parallel enrionment where you can try out new ideas and introduce changes without affecting the "master" branch. 
 
+** add callout note saying that branch names should be descriptive to others know what the feature branch is **
 
+2) After the feature branch has been created, the next step is to make the changes you want to incorporate into the master branch by making a "commit". A commit can be made by adding, modifying, or deleting content contained in the project's files. When making a commit you also add a commit message as a brief summary of what changes have occured. A commit can just be one small change, or it can be several changes grouped together in one commit. However, as a best practice, it's usually better to make lots of smaller commits instead of fewer commits with lots of changes. You'll understand why in just a second. 
+
+3) Once you're satisfied with the commits you've made, it's time to open a pull request. A pull request is saying that you're wanting to incorporate your commit changes from this feature branch into the master branch. Creating a pull request is also inviting other collaboraters to discuss and review the commits you've made. Which, brings us to the next step in the GitHub flow.
+
+4) With the opening of a pull request, disscussion and review of your commits can now take place. For those reviewing your commits, they have full visibility to the changes you're making, and can comment to the pull request generally, or can get as granular as commenting on a specific line of code or content change in each file. This is a great way to insure that these commits are following project guidelines or any specific coding styles. You can then make new commits based off discussions and comments given. It's very common to see back and forth comments and commits after a pull request has been opened. 
+
+After you're satisifed with your pull request and it's been reviwed and has passed any tests, it's time to deploy your changes and verify them in production. If for some reason your changes cause issues, you can always revert back by deploying the existing master back into production. 
+
+If everything checks out and your changes are verified in production, you can merge your feature branch into the master branch. When merged, your pull request makes a merge commit which preserves a historical record of that action on the master branch. This merge commit is similar to a commit you made in your feature branch by recording the changes made for that commit, but it's a commit on the master branch that references the merge of this pull request. Becasue all of these commits are searchable, Git is very transparent when understanding the history of a project. 
+
+And that's the GitHub flow! 
 
 
 
