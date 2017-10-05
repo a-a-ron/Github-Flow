@@ -1,4 +1,4 @@
-Development principles are centered around designing a workflow that is both easily repeatable and reviewable for all collaboraters. Using git as your version control system, you have a lot of flexibility on what exactly that workflow looks like. One popular workflow methodology used by many that is designed primarily around the "release" is called the Git-flow.
+Development principles are centered around designing a workflow that is both easily repeatable and reviewable for all collaboraters. Using git as your version control system, you have a lot of flexibility on what exactly that workflow looks like. One popular workflow used by many that is designed primarily around the "release" is called the Git-flow.
 
 The Git-flow begins with two main branches; a "master branch" which is deployable to production, and a "develop branch" that contains the development changes for the next release. Along with these two branches there are supporting branches such as Hotfix branches, release branches, and feature branches that support the development and tracking of changes for a production release. Each of these branches have a specific purpose and are resticted to certain rules and guidelines on how they operate and interact with each other. Now, without going into much detail on how these branches work, you can quickly start to realize how convuluted this can become. In fact, this workflow can be complicated enough that helper scripts have been developed just to help enforce the rules in this workflow, and since this workflow cannot be enforced by a GUI, developers are limited to the command line which means they need to learn everything very well, which takes a lot of time. 
 
@@ -8,7 +8,9 @@ However, there is another git-workflow that is a much simpler flow that doesn't 
 
 The Github-flow combines all mainline branches into one "master" branch and all hotfixes are treated like feature branches. Once a branch is merged and changes are pushed to the "master" branch, the master branch is ready to be deployed. This workflow is better suited for continuous delivery models where small changes are made and deployed frequently, often multiple times a day. 
 
-Branching is a core concept in Git and something the GitHub flow is based on, and since all branches outside of the "master" branch are considered "feature branches", understanding the lifecycle of a "feature branch" is understanding the GitHub flow. 
+Branching is a core concept in Git and something the GitHub flow is based on, and since all branches outside of the "master" branch are considered "feature branches", understanding the lifecycle of a "feature branch" is understanding the GitHub flow.
+
+1) It starts by creating a feature branch off of master. 
 
 
 
