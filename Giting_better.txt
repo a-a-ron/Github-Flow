@@ -1,0 +1,6 @@
+Video Tutorial Ideas:
+
+The GitHub flow
+Rebase to the Rescue
+Reset vs Revert
+Understanding the Reflog History
