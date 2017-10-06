@@ -24,9 +24,17 @@ After you're satisifed with your pull request and it's been reviwed and has pass
 
 If everything checks out and your changes are verified in production, you can merge your feature branch into the master branch. When merged, your pull request makes a merge commit which preserves a historical record of that action on the master branch. This merge commit is similar to a commit you made in your feature branch by recording the changes made for that commit, but it's a commit on the master branch that references the merge of this pull request. Becasue all of these commits are searchable, Git is very transparent when understanding the history of a project. 
 
-And that's the GitHub flow! 
+And that's the GitHub flow! It's pretty simple but very efficent. 
 
+In Summary,
 
+Create a feature branch off of master
+Commit to that feature branch often
+Open a pull request
+Review and discuss the feature branch
+Deploy changes to production for verification
+Merge the branch into master 
+ 
 
 
    
