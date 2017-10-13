@@ -1,6 +1,6 @@
 Video Tutorial Ideas:
 
-The GitHub flow
+The GitHub flow: https://vimeo.com/238021181
 Rebase to the Rescue
 Reset vs Revert
 Understanding the Reflog History
