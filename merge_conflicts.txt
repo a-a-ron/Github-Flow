@@ -1,1 +1,28 @@
+Collaboration: We believe the best work is done together.
+
+Empathy: We believe in putting people first.
+
+Quality: We believe in setting the standard for excellence.
+
+Positive Impact: We believe in making the world a better place through our work.
+
+Shipping: We believe in creating things for the people using them. ( Talk about creating content for Ally Bank at first that didn'y have the client's needs as the foundation of the training. How changing the scope of the training to focus on their needs is what brought success). 
+
+
+
+
+One of the greatest things about Git is it's foundation of being a distributed version control system. This allows for many collaboraters to contribute to the same project simulateniously. A collaborater can pull down the project's repository to get the most up-to-date version of that project. They can then create a new branch to introduce their changes, or contribute to an existing branch already on the project. Once a collaborater's local changes are ready to be merged, they can be then be pushed up to origin so others can pull down those changes. 
+
+With the many benefits this system brings, it can also create a situation where conflicting changes are trying to be merged. This is called a merge conflict, and happens when a conflicting change has been made on the same line, in the same file, of the two branches that are being merged together. 
+
+If you're new to Git or haven't worked through many merge conflicts, resolving one can seem a little daunting, especailly if you need to resolve more than one conflict. But no matter how many conflicts you need to resolve, the process to resolving one conflict is just replicated until all conflicts have been resolved, and the great thing is that it's not as complicated as you're probably thinking. 
+
+So, let's look at a quick example to see how we can resolve a simple merge conflict. In this example, we're trying to merge our "title_update" branch into our master branch with a small change in our index.html file. If we run the git command "git merge" and then our branch name "title_update" git returns a response saying "conflict, merge conflict in index.html". Git then tells us that we need to fix the conflict and then commit the result to fix the conflict. 
+
+We can fix this conflict by opening up this file in our text editor. In this case, 
+
+
+
+
+
 
