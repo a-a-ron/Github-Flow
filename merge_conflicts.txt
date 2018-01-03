@@ -17,9 +17,21 @@ With the many benefits this system brings, it can also create a situation where 
 
 If you're new to Git or haven't worked through many merge conflicts, resolving one can seem a little daunting, especailly if you need to resolve more than one conflict. But no matter how many conflicts you need to resolve, the process to resolving one conflict is just replicated until all conflicts have been resolved, and the great thing is that it's not as complicated as you're probably thinking. 
 
-So, let's look at a quick example to see how we can resolve a simple merge conflict. In this example, we're trying to merge our "title_update" branch into our master branch with a small change in our index.html file. If we run the git command "git merge" and then our branch name "title_update" git returns a response saying "conflict, merge conflict in index.html". Git then tells us that we need to fix the conflict and then commit the result to fix the conflict. 
+So, let's look at a quick example to see how we can resolve a simple merge conflict. In this example, we're trying to merge our "title_update" branch into our master branch with a small change in our index.html file. If we run the git command "git merge" and then our branch name "title_update" git returns a response saying "conflict, merge conflict in index.html". Git then tells us that we need to fix the conflict and then commit the result. 
 
-We can fix this conflict by opening up this file in our text editor. In this case, 
+We can fix this conflict by opening up the index.html file in our text editor, but before we do so, let's run a couple git commands to give us a little more informaiton. If we run "git status" we get some information on "unmerged paths", and under that section git tells us which file, or files, are having a conflict. As we can see, our index.html file is in this list. The git status command is a great "high level" overview of what's going on, but if you want a quick detailed view into the file or files in question, we can run the "git diff" command. Now, there's some interesting information git provides in this response but the part i want to foucs on is the section with the (+ or -)s. This is the actual content change inside the file, and since we have a merge conflict, git has automatically input some place markers into our file to help us understand the lines in the file that are conflicting.  
+
+The file contents in the first section, just below the HEAD, are the file contents as commited to the branch we are trying to merge into. And the contents in the second section, just above our branch name, are the file contents in our branch that we want to merge into the other branch. 
+
+Let's open up this file in our text editor to resolve the conflict. We can open up the file from our commandline by typing "open -a , and then our text editor, which is atom, and then the file name "index.html". 
+
+At the top of the file we see what git showed us when we used the "git diff" command. We see the merge conflict markers with the conflicting content between the two branches inside them. All we need to do now, is decide which line version we want to keep, and then remove the other as well as the merge conflict markers. Git doesn't care which version we keep, or if we decide to remove both and add something new. so, let's keep the second version, the one on our "title_updated" branch, and remove the other version with the merge conflict markers.<pause 5>
+
+Let's save those changes and go back to our command line. let's now run "git commit -a -m  and then add our commit message "Resolve merge conflict" <pause 5> Let's now run "git status". Our merge conflict of unmerged paths is now resolved and we have nothing to commit and our working tree is clean. 
+
+Hopefully now you can feel a little better about resolving your next merge conflict. You may encounter multiple conflicts or one that takes a little more effort to resolve than this one. But remember, the process is the same. Just look for those merge conflict markers, keep the version your're wanting, and remove the other along with the markers. 
+
+
 
 
 
