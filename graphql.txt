@@ -1,1 +1,28 @@
+Introduction to GraphQL - 30 Minutes
+
+Introduction - Why GraphQL (Facebook problem to be solved. Mobile views)
+REST vs GraphQL
+  - Get exactly what you asked for
+  - Nesting
+  - Strong typed
+  - Introspective
+  - No versioning
+Queries - View like templates (get requests)
+Variables
+Fragments - DRY
+
+---
+Include Somwhere
+- Mutations (POST, PUT, DELETE requests)
+- Pagination
+
+--
+Understand
+- Edges
+- Nodes
+- Connections
+
+
+
+
 
