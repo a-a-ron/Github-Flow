@@ -98,6 +98,26 @@ mutation AddReactionToIssue {
 }
 *
 
+** Variables to Mutation or Query. If using variables, it must be the only defined operation. Values must be strings, the variables section must be in valid JSON.
+
+mutation($myVar:AddReactionInput!) {
+  addReaction(input:$myVar) {
+    reaction {
+      content
+    }
+    subject {
+      id
+    }
+  }
+}
+
+{
+  "myVar": {
+    "subjectId": "MDU6SXNzdWUyODc1MzI5OTY=",
+    "content": "HOORAY"
+  }
+}
+
 Task: Add an emoji reaction to an issue. 
 
 Search the schema documentation for the mutation we want to use. We see the "addReaction" mutation with the description, "Adds a reaction to a subject". Perfect. 
@@ -168,6 +188,31 @@ query FindIssueID {
 }
 
 
+#### Variables
+
+Variables can help reduce completxity when passing mutation input objects as well as make the query argument dynamic. If using the explorer, make sure to enter them in the separate variables pane, and do not include the word "variables" before the JSON object. 
+
+There are 3 steps to using variables
+
+1 - Define the variable ouside the operation in a variables object. 
+
+variables {
+  number_of_repos":3
+}
+
+The object must be valid JSON. This example shows a simple INT variable type, but you can also define more complex variable types, such as input objects. You can also define multiple variables.
+
+2 - Pass the variable to the operation as an argument
+
+query($number_of_repos:Int!){
+
+The argument is a key-value pair, where the key is the name starting with $ "$number_of_repos" and the value is the type "Int". Add a "!" to indicate whether the type is required. 
+
+3 - Use the variable within the operation.
+
+repositories(last: $number_of_repos) {
+
+In this example we substitue the variable for the number of repositories to retrieve. Using variables as arguements lets you dynamically update values in the "variables" object without changing the query. 
 
 
 
