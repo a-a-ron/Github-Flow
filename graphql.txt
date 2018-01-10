@@ -8,19 +8,108 @@ REST vs GraphQL
   - Introspective
   - No versioning
 Queries - View like templates (get requests)
+Mutations (POST, PUT, DELETE requests)
+Pagination
 Variables
 Fragments - DRY
 
----
-Include Somwhere
-- Mutations (POST, PUT, DELETE requests)
-- Pagination
 
 --
 Understand
 - Edges
-- Nodes
+- Nodes - A single object to query.
 - Connections
+
+----
+Why GraphQL (Facebook)
+
+Problem trying to solve was mobile. They have mobile apps at the time (html5) apps, but what users really wanted was a rich native application and needed an API to power that. Existing APIs wouldn't work at the time that they had. If we werebuilding out this client, what would be want. How do we think about the product. 
+
+
+Why GitHiub choose GraphQL
+
+Getting the data you want takes multiple REST API calls. Integrating with a RESTfull API to retrieve a field value often results in a series of requests. You could have an ID that is used in the endpoint to get another ID that is used for another endpoint to get the data you're looking for.
+
+It's difficult to relase comprehensive REST responses that don't expose too much data that's too expensive to calculate. It's hard to descide how much data to provide because some data can be expensive to calculate and you may not care. Chances are that you're just looking for a an ID, a name, or link. 
+
+---
+
+#### Intro to GraphQL
+
+Field - a unit of data you can retrieve from an object. "The GraphQL query language is basically about selecting fields on objects."
+
+Connection - connections let you query related objects as part of the same call. With connections, you can use a single call where you would have to use multiple call to a REST API. It's helpful to picture a graph: dots connected by lines. The dots are nodes, the lines are edges. A connection defines a relationship between the nodes. 
+
+Edge - Edges represent connections between nodes. When you query a connection, you traverse its edges to get to its nodes. Every "edges" field has a "node" field and a "cursor" field. Cursors are used for pagination.
+
+Node - A node is a generic term for an object. You can look up a node directly, or you can access related nodes via a connection. If you specify a "node" that does not return a "scalar", you must include subfields until all fields return scalars.
+
+Scalar - Primitive values: "INT", "FLOAT", "STRING", "BOOLEAN", "ID". 
+
+Introdpective - GraphQL is introspective. This means you can query a GraphQL schema for details about itself. 
+
+## Mutations - Often require information that you can only find out by performing a query first. A query to get an issueID, and a mutation to add an emoji reaction to the issue. (You can include both a query and a mutation in the same explorer window provided names "FindIssueID", "AddReactionToIssue", the operations will be executed as separate calls to the GraphQL endpoint. It's not possible to perform a query at the same time as a mutation.)
+
+query FindIssueID {
+  repository(owner:"a-a-ron", name:"github-flow"){
+    issues(first:1) {
+      edges{
+        node{
+          id
+          title
+        }
+      }
+    }
+  }
+}
+
+mutation AddReactionToIssue {
+  addReaction(input:{subjectId:"MDU6SXNzdWUyODc1MzI5OTY=", content:HOORAY}) {
+    clientMutationId
+  }
+}
+
+Task: Add an emoji reaction to an issue. 
+
+Search the schema documentation for the mutation we want to use. We see the "addReaction" mutation with the description, "Adds a reaction to a subject". Perfect. 
+
+3 Input fields
+- clientMutationId "string"
+- subjectId "ID!"
+- content "ReactionContent!"
+
+! = Required fields
+Content - specify which emoji to use.
+subjectID - The way to identify which issue to add the reaction to.
+
+Arguments - a set of key-value pairs attached to a specific field. Mutations require an input object as an argument. 
+
+#### Forming Calls with GraphQL
+
+REST has numerous enpdoints, the GraphQL API has only one "https://api.github.com/graphql". This endpoint remains constant no matter what operation is performed. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
