@@ -44,6 +44,8 @@ Edge - Edges represent connections between nodes. When you query a connection, y
 
 Node - A node is a generic term for an object. You can look up a node directly, or you can access related nodes via a connection. If you specify a "node" that does not return a "scalar", you must include subfields until all fields return scalars.
 
+Arguments - a set of key-value pairs attached to a specific field. Mutations require an input object as an argument. 
+
 Scalar - Primitive values: "INT", "FLOAT", "STRING", "BOOLEAN", "ID". 
 
 Introdpective - GraphQL is introspective. This means you can query a GraphQL schema for details about itself. 
@@ -52,22 +54,49 @@ Introdpective - GraphQL is introspective. This means you can query a GraphQL sch
 
 query FindIssueID {
   repository(owner:"a-a-ron", name:"github-flow"){
-    issues(first:1) {
-      edges{
-        node{
-          id
-          title
-        }
-      }
+    issue(number:13) {
+      id
     }
   }
 }
 
-mutation AddReactionToIssue {
-  addReaction(input:{subjectId:"MDU6SXNzdWUyODc1MzI5OTY=", content:HOORAY}) {
-    clientMutationId
+*
+{
+  "data": {
+    "repository": {
+      "issue": {
+        "id": "MDU6SXNzdWUyODc1MzI5OTY="
+      }
+    }
   }
 }
+*
+
+mutation AddReactionToIssue {
+  addReaction(input:{subjectId:"MDU6SXNzdWUyODc1MzI5OTY=", content:HOORAY}) {
+    reaction {
+      content
+    }
+    subject {
+      id
+    }
+  }
+}
+
+*
+{
+  "data": {
+    "addReaction": {
+      "reaction": {
+        "content": "HOORAY"
+      },
+      "subject": {
+        "id": "MMDU6SXNzdWUyODc1MzI5OTY="
+      }
+    }
+  }
+}
+*
 
 Task: Add an emoji reaction to an issue. 
 
@@ -82,7 +111,39 @@ Search the schema documentation for the mutation we want to use. We see the "add
 Content - specify which emoji to use.
 subjectID - The way to identify which issue to add the reaction to.
 
-Arguments - a set of key-value pairs attached to a specific field. Mutations require an input object as an argument. 
+Let's examine this line-by-line
+
+"query FindIssueID" - Here we are stating that we're performing a query, essentailly a "GET" request, and we name it "FindIssueID". Naming is optional but allows us to include it in the same explorer window as the mutation. This then allows us to choose which action to perform.
+
+"repository(owner:"a-a-ron", name:"GraphQL-Demo"){" - We specify the repository by querying the "repository" object and passing the "owner" and "name" arguments. 
+
+"issue(number:13) {" - We specify the issue we want to add the reaction to by querying the "issue" object and passing a "number" argument. 
+
+id - We are then requesting the "ID" of the issue that will be used to identify the issue in our mutation to add the emoji reaction.  
+
+#### Mutation Query
+
+Now that we know the ID we can proceed with the mutation.
+
+"mutation AddReactionToIssue {" - We perform a mutation by using the word mutation and then issuesing a name. As with queries, naming a mutation is optional but nice so that we can have mutliple mutations and queries in the same explorer window. 
+
+"addReaction(input:{subjectId:"MDU6SXNzdWUyODc1MzI5OTY=", content:HOORAY}) {" - This next line has a lot of information so let's break it down.
+
+"addReaction" - this is the name of the mutation and is a set value in the API. 
+
+"input" - the input is the required argument "key". For a mutation, the argument key will always be a mutation.
+
+"{subjectId:"MDU6SXNzdWUyODc1MzI5OTY=", content:HOORAY})" - Since the mutation takes an arguement key, we need to provide the required argument value that is an input object.  This is composed of the input fields "subjectID", "content", and the values.  
+The rest of the call is the payload object where we specify what data we want the server to return after we've ran the mutation. This information, as well as information of other valid fields and values are listed in the documentation. 
+
+In this example, we want the two required fields returned "reaction" and "subject", both of which have reuqired subfields "content" and "id". 
+
+At this point, we can check out our reaction to the issue
+
+
+
+
+
 
 #### Forming Calls with GraphQL
 
@@ -93,7 +154,18 @@ REST has numerous enpdoints, the GraphQL API has only one "https://api.github.co
 
 
 
-
+query FindIssueID {
+  repository(owner:"a-a-ron", name:"github-flow"){
+    issues(first:1) {
+      edges{
+        node{
+          id
+          title
+        }
+      }
+    }
+  }
+}
 
 
 
