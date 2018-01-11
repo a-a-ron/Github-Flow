@@ -23,8 +23,13 @@ Understand
 ----
 Why GraphQL (Facebook)
 
-Problem trying to solve was mobile. They have mobile apps at the time (html5) apps, but what users really wanted was a rich native application and needed an API to power that. Existing APIs wouldn't work at the time that they had. If we werebuilding out this client, what would be want. How do we think about the product. 
+Created in 2012, Problem trying to solve was mobile. They have mobile apps at the time (html5) apps, but what users really wanted was a rich native application and needed an API to power that. Existing APIs wouldn't work at the time that they had. If we were building out this client, what would be want. How do we think about the product. 
 
+How do we think about the product?
+- We dont think of the product in join-tables or rest endpoint resources. We wanted to be able to have a subset of this graph to query. 
+Events > attenddess > users NOPe!
+
+newsfeed > stories (object), author/user (object > (users, stories, evetns). 
 
 Why GitHiub choose GraphQL
 
@@ -212,12 +217,97 @@ The argument is a key-value pair, where the key is the name starting with $ "$nu
 
 repositories(last: $number_of_repos) {
 
-In this example we substitue the variable for the number of repositories to retrieve. Using variables as arguements lets you dynamically update values in the "variables" object without changing the query. 
+In this example we substitue the variable for the number of repositories to retrieve. Using variables as arguments lets you dynamically update values in the "variables" object without changing the query. 
+
+
+Start with stating the objective, having some learning outcomes. If anyone has some questions throughout the process.
+
+---
 
 
 
 
 
+
+
+
+
+
+
+
+#### DEMO
+
+# Type queries into this side of the screen, and you will
+# see intelligent typeaheads aware of the current GraphQL type schema,
+# live syntax, and validation errors highlighted within the text.
+
+# We'll get you started with a simple query showing your username!
+query {
+  viewer {
+    login
+  }
+}
+
+
+
+#### --- VARIABLES
+query($number_of_repos:Int!) {
+  viewer {
+    login
+    repositories(last:$number_of_repos){
+      totalCount
+      edges {
+        node {
+          name
+        }
+      }
+    }
+  }
+}
+
+{
+  "number_of_repos": 10
+}
+
+
+#### --- FIND ISSUE ID
+
+query FindIssueID {
+  repository(owner:"a-a-ron", name:"graphql-demo"){
+    issues(last:1) {
+      edges {
+        node {
+          id
+          title
+          body
+        }
+      }
+    }
+  }
+}
+
+#### --- CREATE MUTATION TO ADD A REACTION
+
+mutation AddReactionToIssue {
+  addReaction(input:{subjectId:"MDU6SXNzdWUyODc1MzI5OTY=", content:HOORAY}) {
+    reaction {
+      content
+    }
+    subject {
+      id
+    }
+  }
+}
+
+#### ---- CREATE MUTATION TO ADD COMMENT TO ISSUE
+
+mutation AddCommentToIssue {
+  addComment(input:{subjectId: "MDU6SXNzdWUyODc1MzI5OTY=", body: "I think the benefits are obvious, but i'd like to see a mutation option to create issues in the near future."}) {
+    subject {
+      id
+    }
+  } 
+}
 
 
 
