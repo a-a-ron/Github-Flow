@@ -1,0 +1,18 @@
+Course Outline
+
+Introduction to GitHub - Get Started with GitHub in less than an hour!
+
+TL;DR - Use the GitHub flow to create branches, make commits, and introduce changes with Pull Requests. Mange communications in issues and manage GitHub notifications. 
+
+Title Card: Use the Learn starting card with the Learn logo and titles. Walkthrough: Introduction to GitHub.
+
+Introduction:
+
+Hi! Welcome to this walkthrough video on the Introduction to GitHub course on GitHub Learn! If you're looking for a quick and fun introduction to GitHub, well, you've found it. In this course, you'll learn what GitHub is and why it's so powerful. You'll learn how to perform some important actions to become familiar with GitHub by actually using Github. In this course, you'll learn and use the GitHub flow to create branches, make commits, and introduce changes by using pull requests. You'll also learn how to use issues for discussions and collaboration. 
+
+People around the world use GitHub to collaborate and contribute on projects ranging from software, to policy documents and even cookbooks. You can share you projects with the world and invite your friends to help, or you can keep your projects private and still have easy access wherever you are. GitHub is used to build some of the most powerful applications in the world. It can do a lot of really cool things, but this course will focus on getting you started with the basics. So, let's dig into issues, collaborate with branches, and change code on GitHub by using the GitHub flow. So, let's take a minute to understand what the GitHub flow is.
+
+GitHub Flow:
+
+
+
