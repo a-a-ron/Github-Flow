@@ -14,5 +14,21 @@ People around the world use GitHub to collaborate and contribute on projects ran
 
 GitHub Flow:
 
+1) The flow starts by creating a feature branch off of master. When you create a branch in your project, it's copying that project from that point in time into a parallel enrionment where you can try out new ideas and introduce changes without affecting the "master" branch. 
+
+** add callout note saying that branch names should be descriptive to others know what the feature branch is **
+
+2) After the feature branch has been created, the next step is to make the changes you want to incorporate into the master branch by making a "commit". A commit can be made by adding, modifying, or deleting content contained in the project's files. When making a commit you also add a commit message as a brief summary of what changes have occured. A commit can just be one small change, or it can be several changes grouped together in one commit. However, as a best practice, it's usually better to make lots of smaller commits instead of fewer commits with lots of changes. You'll understand why in just a second. 
+
+3) Once you're satisfied with the commits you've made, it's time to open a pull request. A pull request is saying that you're wanting to incorporate your commit changes from this feature branch into the master branch. Creating a pull request is also inviting other collaboraters to discuss and review the commits you've made. Which, brings us to the next step in the GitHub flow.
+
+4) With the opening of a pull request, disscussion and review of your commits can now take place. For those reviewing your commits, they have full visibility to the changes you're making, and can comment to the pull request generally, or can get as granular as commenting on a specific line of code or content change in each file. This is a great way to insure that these commits are following project guidelines or any specific coding styles. You can then make new commits based off discussions and comments given. It's very common to see back and forth comments and commits after a pull request has been opened. It's also much easier for someone to review small changes being introduced in multip[le commits instead of lots of changes in one commit. 
+
+After you're satisifed with your pull request and it's been reviwed and has passed any tests, it's time to deploy your changes and verify them in production. If for some reason your changes cause issues, you can always revert back by deploying the existing master back into production. 
+
+If everything checks out and your changes are verified in production, you can merge your feature branch into the master branch. When merged, your pull request makes a merge commit which preserves a historical record of that action on the master branch. This merge commit is similar to a commit you made in your feature branch by recording the changes made for that commit, but it's a commit on the master branch that references the merge of this pull request. Becasue all of these commits are searchable, Git is very transparent when understanding the history of a project. 
+
+And that's the GitHub flow! It's pretty simple but very efficent.
+
 
 
