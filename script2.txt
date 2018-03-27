@@ -14,11 +14,11 @@ People around the world use GitHub to collaborate and contribute on projects ran
 
 GitHub Flow:
 
-1) The flow starts by creating a feature branch off of master. When you create a branch in your project, it's copying that project from that point in time into a parallel enrionment where you can try out new ideas and introduce changes without affecting the "master" branch. 
+1) The flow starts by creating a branch off of master. When you create a branch in your project, it's copying that project from that point in time into a parallel enrionment where you can try out new ideas and introduce changes without affecting the "master" branch. 
 
 ** add callout note saying that branch names should be descriptive to others know what the feature branch is **
 
-2) After the feature branch has been created, the next step is to make the changes you want to incorporate into the master branch by making a "commit". A commit can be made by adding, modifying, or deleting content contained in the project's files. When making a commit you also add a commit message as a brief summary of what changes have occured. A commit can just be one small change, or it can be several changes grouped together in one commit. However, as a best practice, it's usually better to make lots of smaller commits instead of fewer commits with lots of changes. You'll understand why in just a second. 
+2) After the branch has been created, the next step is to make the changes you want to incorporate into the master branch by making a "commit". A commit can be made by adding, modifying, or deleting content contained in the project's files. When making a commit you also add a commit message as a brief summary of what changes have occured. A commit can just be one small change, or it can be several changes grouped together in one commit. However, as a best practice, it's usually better to make lots of smaller commits instead of fewer commits with lots of changes. You'll understand why in just a second. 
 
 3) Once you're satisfied with the commits you've made, it's time to open a pull request. A pull request is saying that you're wanting to incorporate your commit changes from this feature branch into the master branch. Creating a pull request is also inviting other collaboraters to discuss and review the commits you've made. Which, brings us to the next step in the GitHub flow.
 
@@ -28,7 +28,15 @@ After you're satisifed with your pull request and it's been reviwed and has pass
 
 If everything checks out and your changes are verified in production, you can merge your feature branch into the master branch. When merged, your pull request makes a merge commit which preserves a historical record of that action on the master branch. This merge commit is similar to a commit you made in your feature branch by recording the changes made for that commit, but it's a commit on the master branch that references the merge of this pull request. Becasue all of these commits are searchable, Git is very transparent when understanding the history of a project. 
 
-And that's the GitHub flow! It's pretty simple but very efficent.
+And that's the GitHub flow! It's pretty simple but very efficent. Now that we understand the GitHub flow, let's dive into this course with a hands-on approach and see how the GitHub flow works in action. To first get started, let's navigate to the Introduction to GitHub course homepage where we can register for the course. 
+
+<Show Introduction to Github main page> SCREENFLOW
+
+You'll notice a couple green buttons to register for the course. It doesn't matter which one you click, so feel free to click either one. <pause 3 sec>. Once clicked, you'll see a popup window appear on your screen. GitHub Learn will need to create a new repository on your GitHub account. This repository will be the "Introduction to Github" course. You have the option to make this repository public or private. For this course, making the repository public is the most common approach, but you do have the option to make it private. Note that making the repository private requires a paid GitHub account. 
+
+Once you've chosen your option, 
+
+
 
 
 
