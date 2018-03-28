@@ -83,6 +83,16 @@ Let's now commit these changes to our branch. We can do this by scrolling down t
 
 Step #6: Open a pull request
 
+We're now taken back to the code tab where we see a new notification appear. We see that our branch, "my-first-branch" has a green button that says" Compare and pull request". This means that we've committed someting to this branch, and that we can now open a pull request to incorporate these changes into the master branch. But before we do so, let's go back to our issue to see our next instructions from the helper bot. Let's click on the issues tab, and then the issue titled "your fist contribution". Scrolling down to the bottom of the page we have a new comment from the helper bot. Awesome, we've successfully made a commit on our branch! Our next instructions are to open a pull request, give it a name, a description, and then click the "create pull request" button. Our helper bot also mentioned that once we create our pull reuqest, it will close this issue and communicate with us over there. Alright, let's create our first pull request.
+
+Let's go back to the code tab and click the "new pull reuqest" button. <pause 5> Under the compare changes section, make sure the "base" branch is on master, and that the compare: branch says our branch name. Let's change our compare branch to say "my-first-branch".
+
+Let's now give our pull request a title. The insructions recommened something like "Add username's file", so let's go with that, but make sure to put your own username instead of mine. <pause 5> 
+
+Let's now add a descriptive comment to the body of the pull reuqest. Maybe something like, "This pull reuqest adds a-a-ron's file to the _post folder. Make sure to replace my username with your username <pause 3> Now that we have a title and a descriptive body to our pull request, we're ready to click the "Create pull request" button. 
+
+
+
 Step #7: Respond to a review
 
 Step #8: Merge your pull request
