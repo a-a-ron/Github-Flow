@@ -70,9 +70,16 @@ Our next step is to create a branch. Let's navigate to the code tab at the top l
 
 You should now see a notification appear at the top of the page that says "branch created". You'll also noticed that in the branch button, it now says "my-first-branch" instead of master. 
 
-Let's now navigate back over to our issue for futher instructions. We can do this by clicking on the "issues" tab next to the code tab. <pause 5> Click on the issue that says, "your first contribution" to open up that issue. <pause 5> If we scroll down to the bottom of page we now see that the helper bot has sent us a new comment. Congratulations on creating your first branch! 
+Let's now navigate back over to our issue for futher instructions. We can do this by clicking on the "issues" tab next to the code tab. <pause 5> Click on the issue that says, "your first contribution" to open up that issue. <pause 5> If we scroll down to the bottom of page we now see that the helper bot has sent us a new comment. Congratulations on creating your first branch!
 
 Step #5: Commit a file
+
+Now that our branch has been created, we can use it to make modifications to our project without changing the deployed or "master" branch. If you remembner from the GitHub flow, the next step after creating a branch is to make a commit. Let's create a new file and commit it to our branch. On step 2 of our new instructions, copy the file name as shown. It starts with the "_posts" and ends with the ".md". Yours will be a bit different than mine, becasue yours will have your username instead of a-a-ron, which is mine. We'll use this in just a minute.
+
+To create our file, let's scroll back up to the top of the page and click on the "code" tab again. In the branch dropdown-menu button, change master to the name of our branch, "my-first-branch". To the right of this button, you'll see another button that says "create new file". Let's click on this button to add a new file to our branch. <pause 3> Next to the github-slideshow repository name, you'll see a text field where we can add the file name that we want created. Following the instructions in the issue, we need to create a file in the "_posts" folder. Let's now paste that file name path that we just copied. 
+
+Let's now add the following content to the body of out file. On line 1 and 2, type 3 dashes, and on line 3, type "your text". <pause 5>
+Let's now commit these changes to our branch. We can do this by scrolling down to the bottom of the page where it says Commit new file. the first text box, is our commit message. This isa breif description of the changes being made in this commit. Let's type "Add" and then the name of your file <pause 8>. We want to make sure we're commiting to our "my-first-branch" and not the master branch. Let's now click on the green "commit new file" button. 
 
 Step #6: Open a pull request
 
