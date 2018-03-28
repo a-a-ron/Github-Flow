@@ -34,7 +34,51 @@ And that's the GitHub flow! It's pretty simple but very efficent. Now that we un
 
 You'll notice a couple green buttons to register for the course. It doesn't matter which one you click, so feel free to click either one. <pause 3 sec>. Once clicked, you'll see a popup window appear on your screen. GitHub Learn will need to create a new repository on your GitHub account. This repository will be the "Introduction to Github" course. You have the option to make this repository public or private. For this course, making the repository public is the most common approach, but you do have the option to make it private. Note that making the repository private requires a paid GitHub account. 
 
-Once you've chosen your option, 
+Once you've chosen your option, you'll be directed to the Introduction to GitHub course steps page. A green "Success" notification should appear at the top of your page to let you know that you've registered for the course and that a new repository has been created.  You'll also notice that the course steps to complete this course are listed on this page. There is also a "next step" section toward the top right of your screen to let you know that next step that needs to be completed. Our next step is to "Assign the first issue to yourself". Let's click on the "assign yourslef" step, either in the course steps or located in the "next step" box. 
+
+Step #1: Assign yourself 
+
+You should now be re-directed to an "issue" in your newely created "github-slideshow" repository under your github profile name. An issue can be opened to have a discussion or collaborate on anything related to this repository. Keep in mind that issues are only discussions, they do not modify the contents of a file or files inside your repository. Discussions can start out as issues and then be linked to a Pull request where the changes are actually made. In this course, we'll be navigating frequently between issues (the instructions and discussions) and pull requests (the actual changes being made), so getting used to this format is helpful in completing this course. Our friendly bot will help us along the way by giving instructions and providing feedback to our actions. Let's get started!
+
+The first thing we see is a "Welcome to Introduction to GitHub". This is great! we've now begun our journey to learn GitHub by using GitHub. Earlier, we breiefly learned what GitHub is and how it can be useful. If you click on the expandable dialogue arrow of "What is GutHub", we get a little more information and a very cool video to watch at the bottom if you're wanting even more. For now, it's important to know that GitHub is a collaboration platform built upon Git which is the distributed version control software that tracks every change we make to our project. 
+
+Below this, we see another expandable dialogue arrow for Issues where we get a litte more information on how issues can be used as well as another video to learn more about issues. 
+
+Below that, we have one more expandable dialogue for managing notifications. Once you've commented on an issue or pull request, email notifications will start to pour in. By default, notifications will be sent by email to any activity in the thread. This can be helpful but can quickly become overwhelming. You can silence or unmute notifications of individual issues and pull requests. You can customize notifications in settings by going to your profile icon and click Settings then notifications. You can also choose to receive notificaionts from a repository by watching, not watching, or ignoring notifications. You can then review notifications for the repositories you are already watching. As with the other sections, there is a video for addtional information on notifications if you want to learn more.
+
+Scrolling down we see our first task of assigning this issue to ourselves. By assigning ourselves to an issue or pull request, we're telling other collaboraters that we'll be managing this discussion or code change. Let's assign outselves to this issue. If we scroll up to the right side of the screen, under the assignees section, let's click on "assign yourself". You should now see your username and profile picture appear. Let's now scroll down to the bottom of the issue and refresh the page. You should now see a new response from out friendly bot letting us know that we are now the proud manager of this issue.
+
+
+Step #2: Turn on GitHub Pages
+
+Our next task is to turn on GitHub pages. GitHub pages is a technology that allows you to serve a static web site from a repository. We've already filled this repository with some fun website content, but the rendered site isn't visible from anywhere right now. So, let's change that. 
+
+We can do this by going to the "settings" tab for the repository by clicking the link in the comment of this issue, or by scrolling up to the top of the page and clicking on the "settings" tab. Once there, scroll down to the section that says "GitHub Pages" and under the "Source" dropdown, select the "Master branch" and then click the "save" button. Once done, let's now return to the issue for more instructions. Scrolling down we now see that our friendly bot has confirmed that GitHub pages is now turned on for this repository and we can now visit our website that is now visible to the public.  
+
+Step #3: Close an Issue
+
+We have completed all the steps in this issue so we can now close it. We can do this by clicking the "close issue" button located at the bottom of the issue. 
+
+We now get another message from the helper bot notifying us that this issue thread has been compelted and to head on over to the next issue for more instructions. Let's click on the "next issue" hyperlink to take us to the next issue. 
+
+
+Step #4: Create a branch
+
+We've now be brought to the second issue where the helper bot has provided some new instructions for our next step. Now that we're familair with working with issues. It's time to put our knowelege of the GitHub flow to the test. In this step, we'll be creating a branch from our project. Remember, a branch is a complete copy of our project that allows us to test out new ideas or make changes to our project withough affecting the "master" branch of the project in the process. Keep in mind that we'll be navigating between our issues with the helper bot, where the instructions are,  and our soon to be created pull request, where the actual changes will be made. 
+
+Our next step is to create a branch. Let's navigate to the code tab at the top left of the page. Now that we're on the code page, we see a list of folders and files inside our repository. To create a new branch, locate the "branch" dropdown button just above the folders and files. Our branch says "master". This is the branch we are currently checked out on. To create a new branch, click on the button to bring up the text field. In this field, type the name of the branch you want to create. It's usually good practice to name your branch in relation to the changes will you be making. In our case, let's just call our branch. "my-first-branch" and then hit enter. <pause 5>
+
+You should now see a notification appear at the top of the page that says "branch created". You'll also noticed that in the branch button, it now says "my-first-branch" instead of master. 
+
+Let's now navigate back over to our issue for futher instructions. We can do this by clicking on the "issues" tab next to the code tab. <pause 5> Click on the issue that says, "your first contribution" to open up that issue. <pause 5> If we scroll down to the bottom of page we now see that the helper bot has sent us a new comment. Congratulations on creating your first branch! 
+
+Step #5: Commit a file
+
+Step #6: Open a pull request
+
+Step #7: Respond to a review
+
+Step #8: Merge your pull request
 
 
 
