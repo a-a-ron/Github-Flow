@@ -109,7 +109,9 @@ Congratulations! You have now completed the Introduction to GitHub course, on Gi
 Now that we're done, we can now view our changes on our github pages site. Let's click the link provided in the last helpful bot comment.<pause 3> If we hit the right arrow key we can see the quote we added to our file.    
 
 
+Closing
 
+We hope this course is only one of many steps in your journey to learn how to use GitHub. There is so much more to learn and do when learning about Git and Github. So, make sure to check out the other GitHub learn courses in your Dashboard to see what else you can do. Thanks, and Happy learning!
 
 
 
