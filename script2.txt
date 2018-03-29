@@ -89,13 +89,29 @@ Let's go back to the code tab and click the "new pull reuqest" button. <pause 5>
 
 Let's now give our pull request a title. The insructions recommened something like "Add username's file", so let's go with that, but make sure to put your own username instead of mine. <pause 5> 
 
-Let's now add a descriptive comment to the body of the pull reuqest. Maybe something like, "This pull reuqest adds a-a-ron's file to the _post folder. Make sure to replace my username with your username <pause 3> Now that we have a title and a descriptive body to our pull request, we're ready to click the "Create pull request" button. 
-
-
+Let's now add a descriptive comment to the body of the pull reuqest. Maybe something like, "This pull reuqest adds a-a-ron's file to the _post folder. now, make sure to replace my username with your username <pause 3> Now that we have a title and a descriptive body to our pull request, we're ready to click the "Create pull request" button.
 
 Step #7: Respond to a review
 
+We now see a new comment from our helper bot asking us to add some different content to our file. We need to replace line 3, the one that just said "your text" with a quotation or meme and witty caption. 
+
+To edit our file, we need to click on the "files changed" tab in this pull request. Once there, find the pencil icon located at the top right of the file changes. Clicking on that icon will bring you back to the edit page we saw ealier when we first added this file's contents. Let's now change line 3, with the instructed content. We were asked to input a quotation or a meme and comment. I'm a big fan of boxing so let's add a quote from a boxing legend. <pause 5> Remember, markdown is supported, so let's put the name in bold. 
+
+Let's now scroll to the bottom of the page and add a commit message. <pause 5 - Add Muhammad Ali quote> and then commit our changes. Let's go back to our conversation tab to see our next instructions <pause 3>. 
+
+
 Step #8: Merge your pull request
+
+Nice! You have now successfuly created your first pull request and can now merge it into the master branch. This is done by clicking the "merge pull request" button at the bottom of the page. Doing so will then ask us to confirm this merge. Once done we can then delete this branch since it is now part of the master branch. 
+
+Congratulations! You have now completed the Introduction to GitHub course, on GitHub Learn! You used the GitHub flow to create a branch, make a commit, open a pull request, make an additional commit based on peer review, and then merged your branch to incorporate your changes into the master branch. You also worked with issues and learned how they can be helpful in starting discussions and assisting pull requests. 
+
+Now that we're done, we can now view our changes on our github pages site. Let's click the link provided in the last helpful bot comment.<pause 3> If we hit the right arrow key we can see the quote we added to our file.    
+
+
+
+
+
 
 
 
