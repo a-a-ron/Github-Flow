@@ -8,9 +8,13 @@ Title Card: Use the Learn starting card with the Learn logo and titles. Walkthro
 
 Introduction:
 
-Hi! Welcome to this walkthrough video on the Introduction to GitHub course on GitHub Learn! If you're looking for a quick and fun introduction to GitHub, well, you've found it. In this course, you'll learn what GitHub is and why it's so powerful. You'll learn how to perform some important actions to become familiar with GitHub by actually using Github. In this course, you'll learn and use the GitHub flow to create branches, make commits, and introduce changes by using pull requests. You'll also learn how to use issues for discussions and collaboration. 
+Hi! Welcome to this walkthrough video on the Introduction to GitHub course on GitHub Learning Lab! If you're looking for a quick and fun introduction to GitHub, well, you've found it. In this course, you'll learn what GitHub is and why it's so powerful. You'll learn how to perform some important actions to become familiar with GitHub by actually using Github. In this course, you'll learn and use the GitHub flow to create branches, make commits, and introduce changes by using pull requests. You'll also learn how to use issues for discussions and collaboration. 
 
 People around the world use GitHub to collaborate and contribute on projects ranging from software, to policy documents and even cookbooks. You can share you projects with the world and invite your friends to help, or you can keep your projects private and still have easy access wherever you are. GitHub is used to build some of the most powerful applications in the world. It can do a lot of really cool things, but this course will focus on getting you started with the basics. So, let's dig into issues, collaborate with branches, and change code on GitHub by using the GitHub flow. So, let's take a minute to understand what the GitHub flow is.
+
+
+
+<<<Already done>>>
 
 GitHub Flow:
 
@@ -30,36 +34,42 @@ If everything checks out and your changes are verified in production, you can me
 
 And that's the GitHub flow! It's pretty simple but very efficent. Now that we understand the GitHub flow, let's dive into this course with a hands-on approach and see how the GitHub flow works in action. To first get started, let's navigate to the Introduction to GitHub course homepage where we can register for the course. 
 
+<<<already done>>>
+
+
+
 <Show Introduction to Github main page> SCREENFLOW
 
-You'll notice a couple green buttons to register for the course. It doesn't matter which one you click, so feel free to click either one. <pause 3 sec>. Once clicked, you'll see a popup window appear on your screen. GitHub Learn will need to create a new repository on your GitHub account. This repository will be the "Introduction to Github" course. You have the option to make this repository public or private. For this course, making the repository public is the most common approach, but you do have the option to make it private. Note that making the repository private requires a paid GitHub account. 
+You'll notice a couple green buttons to join this course. It doesn't matter which one you click, so feel free to click either one. <pause 3 sec>. Once clicked, you'll see a popup window appear on your screen. GitHub Learning Lab will need to create a repository named github-slideshow on your GitHub account. You have the option to make this repository public or private. For this course, making the repository public is the most common approach, but you do have the option to make it private. Note that making the repository private requires a paid GitHub account. 
 
-Once you've chosen your option, you'll be directed to the Introduction to GitHub course steps page. A green "Success" notification should appear at the top of your page to let you know that you've registered for the course and that a new repository has been created.  You'll also notice that the course steps to complete this course are listed on this page. There is also a "next step" section toward the top right of your screen to let you know that next step that needs to be completed. Our next step is to "Assign the first issue to yourself". Let's click on the "assign yourslef" step, either in the course steps or located in the "next step" box. 
+Once you've chosen your option, you'll be directed to the Introduction to GitHub progress page. A green "Success" notification should appear at the top of your page to let you know that you've registered for the course and that a new repository has been created.  You'll also notice that the course steps to complete this course are listed on this page. The first step is to "Assign the first issue to yourself". Let's click on the green start button to get started with the first step. 
 
 Step #1: Assign yourself 
 
-You should now be re-directed to an "issue" in your newely created "github-slideshow" repository under your github profile name. An issue can be opened to have a discussion or collaborate on anything related to this repository. Keep in mind that issues are only discussions, they do not modify the contents of a file or files inside your repository. Discussions can start out as issues and then be linked to a Pull request where the changes are actually made. In this course, we'll be navigating frequently between issues (the instructions and discussions) and pull requests (the actual changes being made), so getting used to this format is helpful in completing this course. Our friendly bot will help us along the way by giving instructions and providing feedback to our actions. Let's get started!
+You should now be re-directed to an "issue" in your newely created "github-slideshow" repository under your github profile name. An issue can be opened to have a discussion or collaborate on anything related to this repository. Keep in mind that issues are only discussions, they do not modify the contents of a file or files inside your repository. Discussions can start out as issues and then be linked to a Pull request where the changes are actually made. In this course, we'll be navigating frequently between issues (the instructions and discussions) and pull requests (the actual changes being made), so getting used to this format is helpful in completing this course. GitHub learning lab will help you along the way by giving instructions on next steps as well as provide feedback to your actions.
 
-The first thing we see is a "Welcome to Introduction to GitHub". This is great! we've now begun our journey to learn GitHub by using GitHub. Earlier, we breiefly learned what GitHub is and how it can be useful. If you click on the expandable dialogue arrow of "What is GutHub", we get a little more information and a very cool video to watch at the bottom if you're wanting even more. For now, it's important to know that GitHub is a collaboration platform built upon Git which is the distributed version control software that tracks every change we make to our project. 
+The first thing you'll see is a comment from Github-learning-lab, welcoming you to the introduction to GitHub course. This is great! you've now begun your journey to learn GitHub by actually using GitHub. Earlier, you breiefly learned what GitHub is and how it can be useful. If you click on the expandable dialogue arrow of "What is GutHub", you get a little more information and a very cool video to watch at the bottom if you're wanting even more. For now, it's important to know that GitHub is a collaboration platform built upon Git which is the distributed version control software that tracks every change you make to your project. 
 
-Below this, we see another expandable dialogue arrow for Issues where we get a litte more information on how issues can be used as well as another video to learn more about issues. 
+Below this, you'll see a few more expandable dialogue arrows. One for exploring a githuib repository, and another for using GitHub's issues. Feel free to click on those resources to learn more.
 
-Below that, we have one more expandable dialogue for managing notifications. Once you've commented on an issue or pull request, email notifications will start to pour in. By default, notifications will be sent by email to any activity in the thread. This can be helpful but can quickly become overwhelming. You can silence or unmute notifications of individual issues and pull requests. You can customize notifications in settings by going to your profile icon and click Settings then notifications. You can also choose to receive notificaionts from a repository by watching, not watching, or ignoring notifications. You can then review notifications for the repositories you are already watching. As with the other sections, there is a video for addtional information on notifications if you want to learn more.
+The last expandable dialogue is for managing notifications. Once you've commented on an issue or pull request, email notifications will start to pour in. By default, notifications will be sent by email to any activity in the thread. This can be helpful but can quickly become overwhelming. GitHub allows you to silence or unmute notifications of individual issues and pull requests. You can customize notifications in settings by going to your profile icon and click Settings then notifications. You can also choose to receive notificaionts from a repository by watching, not watching, or ignoring notifications. You can then review notifications for the repositories you are already watching. As with the other sections, there is a video for addtional information on notifications if you want to learn more.<pause 3>
 
-Scrolling down we see our first task of assigning this issue to ourselves. By assigning ourselves to an issue or pull request, we're telling other collaboraters that we'll be managing this discussion or code change. Let's assign outselves to this issue. If we scroll up to the right side of the screen, under the assignees section, let's click on "assign yourself". You should now see your username and profile picture appear. Let's now scroll down to the bottom of the issue and refresh the page. You should now see a new response from out friendly bot letting us know that we are now the proud manager of this issue.
+Scrolling down you'll see your first task of assigning this issue to yourself. By assigning yourself to an issue or pull request, you're telling other collaboraters that you'll be managing this discussion or code change. Let's assign yourself to this issue. If you scroll up to the right side of the screen, under the assignees section, click on "assign yourself". You should now see your username and profile picture appear. You can now scroll down to the bottom of the issue and refresh the page. You should now see a new response from github-learning-lab letting you know that you are now the proud manager of this issue.
 
 
 Step #2: Turn on GitHub Pages
 
-Our next task is to turn on GitHub pages. GitHub pages is a technology that allows you to serve a static web site from a repository. We've already filled this repository with some fun website content, but the rendered site isn't visible from anywhere right now. So, let's change that. 
+Your next task is to turn on GitHub pages. GitHub pages is a technology that allows you to serve a static web site from a repository. GitHub-learning-lab as already filled this repository with some fun website content, but the rendered site isn't visible from anywhere right now. So, let's change that. 
 
-We can do this by going to the "settings" tab for the repository by clicking the link in the comment of this issue, or by scrolling up to the top of the page and clicking on the "settings" tab. Once there, scroll down to the section that says "GitHub Pages" and under the "Source" dropdown, select the "Master branch" and then click the "save" button. Once done, let's now return to the issue for more instructions. Scrolling down we now see that our friendly bot has confirmed that GitHub pages is now turned on for this repository and we can now visit our website that is now visible to the public.  
+You can do this by going to the "settings" tab for the repository by clicking the "settings" link in the comment of this issue. You'll now be directed to the settings tab for this repository. Scroll down to the section that says "GitHub Pages" and under the "Source" dropdown that says NONE, select the option that says "Master branch", and then click the "save" button. Once done, you can now return back to the issue for more instructions. You can do this by clicking on the "Issues" tab in the top menu bar.<pause3> Click on the issues that says "Getting Started with GitHub" <pause 3> 
+
+Scrolling down you now see that github-learning-lab has confirmed that GitHub pages is now turned on for this repository and that you can visit your website that is now visible to the public. Nice!  
 
 Step #3: Close an Issue
 
-We have completed all the steps in this issue so we can now close it. We can do this by clicking the "close issue" button located at the bottom of the issue. 
+Now that you've completed the tasks in this issue, the next step is to close it. You can do this by clicking the "close issue" button located at the bottom of the issue.<pause 2> 
 
-We now get another message from the helper bot notifying us that this issue thread has been compelted and to head on over to the next issue for more instructions. Let's click on the "next issue" hyperlink to take us to the next issue. 
+You now get another message from the github-learning-lab notifying you that this issue thread has been compelted and to head on over to the next issue for more instructions. You can click on the "next issue" link in the comment to take you to the next issue. 
 
 
 Step #4: Create a branch
@@ -104,14 +114,14 @@ Step #8: Merge your pull request
 
 Nice! You have now successfuly created your first pull request and can now merge it into the master branch. This is done by clicking the "merge pull request" button at the bottom of the page. Doing so will then ask us to confirm this merge. Once done we can then delete this branch since it is now part of the master branch. 
 
-Congratulations! You have now completed the Introduction to GitHub course, on GitHub Learn! You used the GitHub flow to create a branch, make a commit, open a pull request, make an additional commit based on peer review, and then merged your branch to incorporate your changes into the master branch. You also worked with issues and learned how they can be helpful in starting discussions and assisting pull requests. 
+Congratulations! You have now completed the Introduction to GitHub course, on GitHub Learning Lab! You used the GitHub flow to create a branch, make a commit, open a pull request, make an additional commit based on peer review, and then merged your branch to incorporate your changes into the master branch. You also worked with issues and learned how they can be helpful in starting discussions and assisting pull requests. 
 
 Now that we're done, we can now view our changes on our github pages site. Let's click the link provided in the last helpful bot comment.<pause 3> If we hit the right arrow key we can see the quote we added to our file.    
 
 
 Closing
 
-We hope this course is only one of many steps in your journey to learn how to use GitHub. There is so much more to learn and do when learning about Git and Github. So, make sure to check out the other GitHub learn courses in your Dashboard to see what else you can do. Thanks, and Happy learning!
+We hope this course is only one of many steps in your journey to learn how to use Git and GitHub. There is so much more to learn and do so make sure to check out the other GitHub learning Lab courses in your Dashboard. Thanks, and Happy learning!
 
 
 
