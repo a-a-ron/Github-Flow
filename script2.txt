@@ -69,59 +69,63 @@ Step #3: Close an Issue
 
 Now that you've completed the tasks in this issue, the next step is to close it. You can do this by clicking the "close issue" button located at the bottom of the issue.<pause 2> 
 
-You now get another message from the github-learning-lab notifying you that this issue thread has been compelted and to head on over to the next issue for more instructions. You can click on the "next issue" link in the comment to take you to the next issue. 
+You now get another message from the github-learning-lab notifying you that this issue thread has been compelted and to head on over to the next issue for more instructions. You can click on the "next issue" link in the comment to take you to the next issue. <pause 3>
 
 
 Step #4: Create a branch
 
-We've now be brought to the second issue where the helper bot has provided some new instructions for our next step. Now that we're familair with working with issues. It's time to put our knowelege of the GitHub flow to the test. In this step, we'll be creating a branch from our project. Remember, a branch is a complete copy of our project that allows us to test out new ideas or make changes to our project withough affecting the "master" branch of the project in the process. Keep in mind that we'll be navigating between our issues with the helper bot, where the instructions are,  and our soon to be created pull request, where the actual changes will be made. 
+You've now be brought to the second issue where Github-learning-lab has provided some new instructions for our next step. Now that you're familair with working with issues, and you already know what the Github flow is. It's time to put our knowelege of the GitHub flow to the test. However, if you feel like you need to go over it again, you can click on this video link to watch a great video on the GitHub flow. In our next step, we'll be creating a branch from our project. Remember, a branch is a complete copy of our project that allows us to test out new ideas or make changes to our project withough affecting the "master" branch of the project in the process. Keep in mind that we'll be navigating between our issues with the github-learning-lab responses, where the instructions are,  and our soon to be created pull request, where the actual changes will be made. 
 
-Our next step is to create a branch. Let's navigate to the code tab at the top left of the page. Now that we're on the code page, we see a list of folders and files inside our repository. To create a new branch, locate the "branch" dropdown button just above the folders and files. Our branch says "master". This is the branch we are currently checked out on. To create a new branch, click on the button to bring up the text field. In this field, type the name of the branch you want to create. It's usually good practice to name your branch in relation to the changes will you be making. In our case, let's just call our branch. "my-first-branch" and then hit enter. <pause 5>
+Our next step is to create a branch. Let's navigate to the code tab at the top left of the page.<pause 3> Now that you're on the code page, you'll see a list of folders and files inside your repository. To create a new branch, locate the "branch" dropdown button just above the folders and files. Currently, the branch button says "master". This is the branch you are currently checked out on. To create a new branch, click on the button to bring up the text field. In this field, type the name of the branch you want to create. It's usually good practice to name your branch in relation to the changes will you be making. In your case, you can name the branch. "my-first-branch" and then hit enter. <pause 5>
 
 You should now see a notification appear at the top of the page that says "branch created". You'll also noticed that in the branch button, it now says "my-first-branch" instead of master. 
 
-Let's now navigate back over to our issue for futher instructions. We can do this by clicking on the "issues" tab next to the code tab. <pause 5> Click on the issue that says, "your first contribution" to open up that issue. <pause 5> If we scroll down to the bottom of page we now see that the helper bot has sent us a new comment. Congratulations on creating your first branch!
+Let's now navigate back over to our issue for futher instructions. We can do this by clicking on the "issues" tab next to the code tab. <pause 5> Click on the issue that says, "your first contribution" to open up that issue. <pause 5> If you scroll down to the bottom of page you'll now see that github-learning-lab has provided you with a new step to follow. Congratulations on creating your first branch!
 
 Step #5: Commit a file
 
-Now that our branch has been created, we can use it to make modifications to our project without changing the deployed or "master" branch. If you remembner from the GitHub flow, the next step after creating a branch is to make a commit. Let's create a new file and commit it to our branch. On step 2 of our new instructions, copy the file name as shown. It starts with the "_posts" and ends with the ".md". Yours will be a bit different than mine, becasue yours will have your username instead of a-a-ron, which is mine. We'll use this in just a minute.
+Now that your branch has been created, you can use it to make modifications to our project without changing the deployed or "master" branch. If you remembner from the GitHub flow, the next step after creating a branch is to make a commit. It's time to create a new file and commit it to your branch. The first instruction is to return back to the "code" tab, but before you do so, select and copy the information in step 5, you'll be using this is just a minute. <pause 3> Navigate back to the code tab located in the top menu bar <pause 3> 
 
-To create our file, let's scroll back up to the top of the page and click on the "code" tab again. In the branch dropdown-menu button, change master to the name of our branch, "my-first-branch". To the right of this button, you'll see another button that says "create new file". Let's click on this button to add a new file to our branch. <pause 3> Next to the github-slideshow repository name, you'll see a text field where we can add the file name that we want created. Following the instructions in the issue, we need to create a file in the "_posts" folder. Let's now paste that file name path that we just copied. 
+In the branch dropdown-menu button, change master to the name of your branch, "my-first-branch".<pause 2> To the right of this button, you'll see another button that says "create new file". Click on this button to add a new file to your branch. <pause 3> Next to the github-slideshow repository name, you'll see a text field where we can add the file name that you want created. Following the instructions in the issue, you'll need to create a file in the "_posts" with the name "0000-01-02-YOUR-USERNAME.md". I'll but putting my username, which is a-a-ron, but remember to put you username instead of mine. <pause 5> 
 
-Let's now add the following content to the body of out file. On line 1 and 2, type 3 dashes, and on line 3, type "your text". <pause 5>
-Let's now commit these changes to our branch. We can do this by scrolling down to the bottom of the page where it says Commit new file. the first text box, is our commit message. This isa breif description of the changes being made in this commit. Let's type "Add" and then the name of your file <pause 8>. We want to make sure we're commiting to our "my-first-branch" and not the master branch. Let's now click on the green "commit new file" button. 
+You can now add the following content to the body of your file. Paste the content from step 5 in the previous issue.<pause 3>
+
+
+You are now ready to commit this to your branch. You can do this by scrolling down to the bottom of the page where it says Commit new file. the first text box, is our commit message. This is a breif description of the changes being made in this commit. You can type something like, "Add" and then the name of your file <pause 8>. you'll want to make sure you're commiting to your "my-first-branch" and not the master branch. You can now click on the green "commit new file" button at the bottom. 
 
 Step #6: Open a pull request
 
-We're now taken back to the code tab where we see a new notification appear. We see that our branch, "my-first-branch" has a green button that says" Compare and pull request". This means that we've committed someting to this branch, and that we can now open a pull request to incorporate these changes into the master branch. But before we do so, let's go back to our issue to see our next instructions from the helper bot. Let's click on the issues tab, and then the issue titled "your fist contribution". Scrolling down to the bottom of the page we have a new comment from the helper bot. Awesome, we've successfully made a commit on our branch! Our next instructions are to open a pull request, give it a name, a description, and then click the "create pull request" button. Our helper bot also mentioned that once we create our pull reuqest, it will close this issue and communicate with us over there. Alright, let's create our first pull request.
+You're now taken back to the code tab where you'll see a new notification appear. You'll notice that your branch, "my-first-branch" is one commit ahead of master. This means that you've committed something to this branch. Now that you've made the commit, navigate back to the issue to see your next instructions. Click on the issues tab in the top menu, and then the issue titled "your fist contribution". <pause 3> 
 
-Let's go back to the code tab and click the "new pull reuqest" button. <pause 5> Under the compare changes section, make sure the "base" branch is on master, and that the compare: branch says our branch name. Let's change our compare branch to say "my-first-branch".
+Scrolling down to the bottom of the page you have a new comment from github-learning-lab. Awesome, you've successfully made a commit on your branch! Your next instructions are to open a pull request, give it a name, a description, and then click the "create pull request" button. GitHub-learning-lab also mentioned that once you create your pull reuqest, it will close this issue and communicate with you over there. Alright, time for you to create your first pull request.
 
-Let's now give our pull request a title. The insructions recommened something like "Add username's file", so let's go with that, but make sure to put your own username instead of mine. <pause 5> 
+Let's go back to the code tab and click the "compare & pull reuqest" button  for our branch. <pause 5> Under the compare changes section, make sure the "base" branch is on master, and that the compare: branch says your branch name "my-first-branch".
 
-Let's now add a descriptive comment to the body of the pull reuqest. Maybe something like, "This pull reuqest adds a-a-ron's file to the _post folder. now, make sure to replace my username with your username <pause 3> Now that we have a title and a descriptive body to our pull request, we're ready to click the "Create pull request" button.
+Let's now give your pull request a title. The insructions recommened something like "Add username's file", so let's go with that, but make sure to put your own username instead of mine. <pause 5> 
+
+Let's now add a descriptive comment to the body of the pull reuqest. Maybe something like, "This pull reuqest adds a-a-ron's file to the _posts folder" Make sure to replace my username with your username <pause 3> Now that you have a title and a descriptive body to your pull request, you're ready to click the green "Create pull request" button.
 
 Step #7: Respond to a review
 
-We now see a new comment from our helper bot asking us to add some different content to our file. We need to replace line 3, the one that just said "your text" with a quotation or meme and witty caption. 
+You'll now see a new comment from github-learning-lab asking you to add some different content to your file. You need to replace line 5 of your file, the one that just said "your text" with a quotation or meme and witty caption. 
 
-To edit our file, we need to click on the "files changed" tab in this pull request. Once there, find the pencil icon located at the top right of the file changes. Clicking on that icon will bring you back to the edit page we saw ealier when we first added this file's contents. Let's now change line 3, with the instructed content. We were asked to input a quotation or a meme and comment. I'm a big fan of boxing so let's add a quote from a boxing legend. <pause 5> Remember, markdown is supported, so let's put the name in bold. 
+To edit your file, you'll need to click on the "files changed" tab in this pull request located just above the first comment. Once there, find the pencil icon located at the top right of the file changes.<pause 3> Clicking on that icon will bring you back to the edit page we saw ealier. Change line 5, with a quotation, meme, or comment. Now, I'm a big fan of boxing so feel free to add anything, but i'm going to add a quote from a boxing legend. <pause 5> 
 
-Let's now scroll to the bottom of the page and add a commit message. <pause 5 - Add Muhammad Ali quote> and then commit our changes. Let's go back to our conversation tab to see our next instructions <pause 3>. 
+Once done, scroll to the bottom of the page and add a commit message. <pause 5 - Add Muhammad Ali quote> and then commit your changes. You can now navigate back to the conversation tab at the top to see your next instructions <pause 3>. 
 
 
 Step #8: Merge your pull request
 
-Nice! You have now successfuly created your first pull request and can now merge it into the master branch. This is done by clicking the "merge pull request" button at the bottom of the page. Doing so will then ask us to confirm this merge. Once done we can then delete this branch since it is now part of the master branch. 
+Nice! You have now successfuly created your first pull request and can now merge it into the master branch. This is done by clicking the green "merge pull request" button at the bottom of the page. Doing so will then ask you to confirm this merge. Once done you can then delete this branch since it is now part of the master branch. 
 
-Congratulations! You have now completed the Introduction to GitHub course, on GitHub Learning Lab! You used the GitHub flow to create a branch, make a commit, open a pull request, make an additional commit based on peer review, and then merged your branch to incorporate your changes into the master branch. You also worked with issues and learned how they can be helpful in starting discussions and assisting pull requests. 
+Congratulations! You have now completed the Introduction to GitHub course, on GitHub Learning Lab! You used the GitHub flow to create a branch, make a commit, open a pull request, make an additional commit based on peer review from GitHub-learning-lab, and then merged your branch to incorporate your changes into the master branch. You also worked with issues and learned how they can be helpful in starting discussions and assisting pull requests. 
 
-Now that we're done, we can now view our changes on our github pages site. Let's click the link provided in the last helpful bot comment.<pause 3> If we hit the right arrow key we can see the quote we added to our file.    
+Now that you're done, you can now view your changes on your github pages site. Click the link provided in the last github-learning-lab response.<pause 3> If you click the right arrow key you can see the quote or comment you added to your file. You can now navigate back to the Introduciton to GitHub progress page on GitHub-learning-lab to see your completed progress. <pause 2> 
 
 
 Closing
 
-We hope this course is only one of many steps in your journey to learn how to use Git and GitHub. There is so much more to learn and do so make sure to check out the other GitHub learning Lab courses in your Dashboard. Thanks, and Happy learning!
+I hope this course is only one of many steps in your journey to learn how to use Git and GitHub. There is so much more to learn and do when leaening Git and GitHub, so make sure to check out the other GitHub learning Lab courses located in the courses tab. You're now one step closer to becoming a Git and GitHub master. Thanks for watching, and Happy learning!
 
 
 
