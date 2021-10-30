@@ -32,3 +32,7 @@ Once the changes have been reviewed and approved, you can merge your Pull Reques
 Here are some key resources for additional learning
 - https://guides.github.com/introduction/flow/
 - https://lab.github.com/githubtraining/introduction-to-github
+
+## What's missing
+
+Contribute to this section by adding what you think is missing.
