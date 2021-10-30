@@ -1,5 +1,8 @@
 # Understanding the GitHub Flow
 
+<img width="1041" alt="Screen Shot 2021-10-30 at 4 49 45 PM" src="https://user-images.githubusercontent.com/6351798/139560548-772d637a-394f-4382-936c-319995e12d43.png">
+
+
 ## What is the GitHub Flow?
 
 The GitHub flow is a lightweight branch-based workflow that supports teams and projects were deployments are made regularly. Since the GitHub flow is based on the Git system, it inherits all the powerful featuers that Git offers. Since Git is complex and often confusing, the GitHub flow helps to simplify the development process and allows for simultaneously multi-branch development.
