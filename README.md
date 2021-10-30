@@ -27,3 +27,8 @@ Once the Pull Request has been opened, the person or team reviewing your changes
 
 Once the changes have been reviewed and approved, you can merge your Pull Request into the master branch. By doing so, this takes the changes in your feature branch and integrates them into the master branch. Once merged, Pull Requests preserve a record of the changes you committed to the master branch. You can go back at any time and review the changes.
 
+## Resources
+
+Here are some key resources for additional learning
+- https://guides.github.com/introduction/flow/
+
